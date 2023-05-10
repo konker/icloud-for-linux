@@ -6,5 +6,5 @@ Comment=iCloud Find My iPhone
 Type=Application
 Categories=Office
 Icon=icloud-find-my-iphone
-Exec=icloud-for-linux.find-my-iphone
+Exec=icloud-for-linux --no-sandbox find-my-iphone
 StartupWMClass=icloud-for-linux.find

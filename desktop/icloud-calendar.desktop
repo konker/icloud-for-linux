@@ -6,5 +6,5 @@ Comment=iCloud Calendar
 Type=Application
 Categories=Office
 Icon=icloud-calendar
-Exec=icloud-for-linux.calendar
+Exec=icloud-for-linux --no-sandbox calendar
 StartupWMClass=icloud-for-linux.calendar

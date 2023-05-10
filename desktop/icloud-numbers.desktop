@@ -6,5 +6,5 @@ Comment=iCloud Numbers
 Type=Application
 Categories=Office
 Icon=icloud-numbers
-Exec=icloud-for-linux.numbers
+Exec=icloud-for-linux --no-sandbox numbers
 StartupWMClass=icloud-for-linux.numbers

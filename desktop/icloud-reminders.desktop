@@ -6,5 +6,5 @@ Comment=iCloud Reminders
 Type=Application
 Categories=Office
 Icon=icloud-reminders
-Exec=icloud-for-linux.reminders
+Exec=icloud-for-linux --no-sandbox reminders
 StartupWMClass=icloud-for-linux.reminders
