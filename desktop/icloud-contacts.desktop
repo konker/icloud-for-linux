@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=0.11
+Name=iCloud Contacts
+GenericName=iCloud Contacts
+Comment=iCloud Contacts
+Type=Application
+Categories=Office
+Icon=icloud-contacts
+Exec=icloud-for-linux.contacts
+StartupWMClass=icloud-for-linux.contacts

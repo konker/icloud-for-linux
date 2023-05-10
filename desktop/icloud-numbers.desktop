@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=0.11
+Name=iCloud Numbers
+GenericName=iCloud Numbers
+Comment=iCloud Numbers
+Type=Application
+Categories=Office
+Icon=icloud-numbers
+Exec=icloud-for-linux.numbers
+StartupWMClass=icloud-for-linux.numbers
