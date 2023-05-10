@@ -1,28 +1,28 @@
-import { app, BrowserWindow, Menu, shell } from 'electron'
-import { existsSync, mkdirSync, copyFileSync, closeSync, openSync, readFileSync, writeFileSync } from 'fs'
+const { app, BrowserWindow, Menu, shell } = require('electron')
+const fs = require('fs')
 
 const levelDbDir = 'config/icloud-for-linux/Local Storage/leveldb'
 const levelDbFile = '/000003.log'
 if (typeof process.env.SNAP != 'undefined') {
-  if (!existsSync(process.env.SNAP_USER_DATA + '/.' + levelDbDir)) {
-    mkdirSync(process.env.SNAP_USER_DATA + '/.' + levelDbDir, { recursive: true })
-    copyFileSync(process.env.SNAP + '/' + levelDbDir + levelDbFile, process.env.SNAP_USER_DATA + '/.' + levelDbDir + levelDbFile)
+  if (!fs.existsSync(process.env.SNAP_USER_DATA + '/.' + levelDbDir)) {
+    fs.mkdirSync(process.env.SNAP_USER_DATA + '/.' + levelDbDir, { recursive: true })
+    fs.copyFileSync(process.env.SNAP + '/' + levelDbDir + levelDbFile, process.env.SNAP_USER_DATA + '/.' + levelDbDir + levelDbFile)
   }
 } else {
-  if (!existsSync(process.env.HOME + '/.' + levelDbDir)) {
-    mkdirSync(process.env.HOME + '/.' + levelDbDir, { recursive: true })
-    copyFileSync('/usr/lib/icloud-for-linux/resources/dump/' + levelDbDir + levelDbFile, process.env.HOME + '/.' + levelDbDir + levelDbFile)
+  if (!fs.existsSync(process.env.HOME + '/.' + levelDbDir)) {
+    fs.mkdirSync(process.env.HOME + '/.' + levelDbDir, { recursive: true })
+    fs.copyFileSync('/usr/lib/icloud-for-linux/resources/dump/' + levelDbDir + levelDbFile, process.env.HOME + '/.' + levelDbDir + levelDbFile)
   }
 }
 
 let tld = '.com'
 if (typeof process.env.SNAP != 'undefined') {
   try {
-    tld = readFileSync(process.env.SNAP_USER_COMMON + '/tld', 'utf8').trim()
+    tld = fs.readFileSync(process.env.SNAP_USER_COMMON + '/tld', 'utf8').trim()
   }
   catch {
     tld = '.com'
-    writeFileSync(process.env.SNAP_USER_COMMON + '/tld', tld)
+    fs.writeFileSync(process.env.SNAP_USER_COMMON + '/tld', tld)
   }
 }
 
