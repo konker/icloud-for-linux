@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=0.11
+Name=iCloud Pages
+GenericName=iCloud Pages
+Comment=iCloud Pages
+Type=Application
+Categories=Office
+Icon=icloud-pages
+Exec=icloud-for-linux.pages
+StartupWMClass=icloud-for-linux.pages

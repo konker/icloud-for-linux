@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=0.11
+Name=iCloud Notes
+GenericName=iCloud Notes
+Comment=iCloud Notes
+Type=Application
+Categories=Office
+Icon=icloud-notes
+Exec=icloud-for-linux.notes
+StartupWMClass=icloud-for-linux.notes
