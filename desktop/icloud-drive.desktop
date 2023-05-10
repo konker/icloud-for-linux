@@ -6,5 +6,5 @@ Comment=iCloud Drive
 Type=Application
 Categories=Office
 Icon=icloud-drive
-Exec=icloud-for-linux.drive
+Exec=icloud-for-linux --no-sandbox drive
 StartupWMClass=icloud-for-linux.iclouddrive

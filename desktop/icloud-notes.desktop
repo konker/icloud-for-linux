@@ -6,5 +6,5 @@ Comment=iCloud Notes
 Type=Application
 Categories=Office
 Icon=icloud-notes
-Exec=icloud-for-linux.notes
+Exec=icloud-for-linux --no-sandbox notes
 StartupWMClass=icloud-for-linux.notes

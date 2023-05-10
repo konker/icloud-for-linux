@@ -6,5 +6,5 @@ Comment=iCloud Photos
 Type=Application
 Categories=Office
 Icon=icloud-photos
-Exec=icloud-for-linux.photos
+Exec=icloud-for-linux --no-sandbox photos
 StartupWMClass=icloud-for-linux.photos

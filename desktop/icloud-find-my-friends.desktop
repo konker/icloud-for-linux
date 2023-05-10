@@ -6,5 +6,5 @@ Comment=iCloud Find My Friend
 Type=Application
 Categories=Office
 Icon=icloud-find-my-friends
-Exec=icloud-for-linux.find-my-friends
+Exec=icloud-for-linux --no-sandbox find-my-friends
 StartupWMClass=icloud-for-linux.fmf

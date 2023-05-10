@@ -6,5 +6,5 @@ Comment=iCloud Keynote
 Type=Application
 Categories=Office
 Icon=icloud-keynote
-Exec=icloud-for-linux.keynote
+Exec=icloud-for-linux --no-sandbox keynote
 StartupWMClass=icloud-for-linux.keynote

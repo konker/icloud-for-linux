@@ -6,5 +6,5 @@ Comment=iCloud Contacts
 Type=Application
 Categories=Office
 Icon=icloud-contacts
-Exec=icloud-for-linux.contacts
+Exec=icloud-for-linux --no-sandbox contacts
 StartupWMClass=icloud-for-linux.contacts
